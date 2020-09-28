@@ -1,0 +1,24 @@
+class Solution:
+    def maxScore(self, cardPoints: List[int], k: int) -> int:
+        
+        
+        left_sum,right_sum=0,0
+        
+        for i in range(k):
+            left_sum += cardPoints[i]
+            
+        
+        ans = left_sum
+        yz = len(cardPoints)-1
+        
+        while k-1 >= 0:
+            left_sum -= cardPoints[k-1]
+            right_sum += cardPoints[yz]
+            yz -= 1
+            k -= 1
+            
+            ans = max(ans,left_sum+right_sum)
+            
+            
+        return ans
+            
