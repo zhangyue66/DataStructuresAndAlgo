@@ -1,0 +1,7 @@
+1.524 题 对d = ["ale","apple","monkey","plea"]进行排序  要求越长的排的前面 并且 smallest lexicographical order
+
+d.sort(key = lambda x: (-len(x),x))
+
+对len（x）取负值可以让长度从大到小排序 此处lambda函数进行了两次排序
+
+
