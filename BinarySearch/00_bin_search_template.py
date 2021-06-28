@@ -1,4 +1,5 @@
 # [l,r)
+#binary search视频 解释开闭区间 https://www.youtube.com/watch?v=J-IQxfYRTto&list=PLLuMmzMTgVK5Hy1qcWYZcd7wVQQ1v0AjX&index=5
 
 # search value
 def bin_sec_l(nums,target):
